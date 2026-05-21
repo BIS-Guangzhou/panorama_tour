@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-7-third-floor",
-      "name": "7 third floor",
+      "id": "0-third-floor",
+      "name": "Third Floor",
       "levels": [
         {
           "tileSize": 256,
@@ -33,14 +33,14 @@ var APP_DATA = {
           "yaw": 2.446060567913668,
           "pitch": 0.07317408579475426,
           "rotation": 0,
-          "target": "1-6-second-floor"
+          "target": "1-second-floor"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-6-second-floor",
-      "name": "6 second floor",
+      "id": "1-second-floor",
+      "name": "Second Floor",
       "levels": [
         {
           "tileSize": 256,
@@ -71,13 +71,13 @@ var APP_DATA = {
           "yaw": 0.16044612829101546,
           "pitch": 0.07993574047189611,
           "rotation": 0,
-          "target": "0-7-third-floor"
+          "target": "0-third-floor"
         },
         {
           "yaw": 0.3833463292510899,
           "pitch": 0.15597524626665304,
           "rotation": 3.141592653589793,
-          "target": "3-4-first-floor"
+          "target": "3-admissions"
         },
         {
           "yaw": 0.9197169598406738,
@@ -89,14 +89,14 @@ var APP_DATA = {
           "yaw": 1.403663475903297,
           "pitch": 0.10358090803112674,
           "rotation": 0,
-          "target": "8-arts-classroo"
+          "target": "8-arts-classroom"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2-5-stairs-first-floor",
-      "name": "5 stairs first floor",
+      "id": "2-exhibition-hall-1f",
+      "name": "Exhibition Hall (1F)",
       "levels": [
         {
           "tileSize": 256,
@@ -127,14 +127,14 @@ var APP_DATA = {
           "yaw": -2.9359886313007397,
           "pitch": 0.2913936290447854,
           "rotation": 0,
-          "target": "1-6-second-floor"
+          "target": "1-second-floor"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-4-first-floor",
-      "name": "4 first floor",
+      "id": "3-admissions",
+      "name": "Admissions",
       "levels": [
         {
           "tileSize": 256,
@@ -165,7 +165,7 @@ var APP_DATA = {
           "yaw": -2.4197362049887907,
           "pitch": 0.07889490760959816,
           "rotation": 0,
-          "target": "2-5-stairs-first-floor"
+          "target": "2-exhibition-hall-1f"
         },
         {
           "yaw": 0.1570117653754579,
@@ -209,20 +209,20 @@ var APP_DATA = {
           "yaw": -0.4483514133272397,
           "pitch": 0.02548894106895716,
           "rotation": 0,
-          "target": "3-4-first-floor"
+          "target": "3-admissions"
         },
         {
           "yaw": -2.591121853421358,
           "pitch": 0.07574984346738312,
           "rotation": 0,
-          "target": "5-2-students-entrance"
+          "target": "5-student-entrance"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-2-students-entrance",
-      "name": "2 Students Entrance",
+      "id": "5-student-entrance",
+      "name": "Student Entrance",
       "levels": [
         {
           "tileSize": 256,
@@ -259,14 +259,14 @@ var APP_DATA = {
           "yaw": -1.304557797940097,
           "pitch": -0.024151289797426756,
           "rotation": 0,
-          "target": "6-1-school-center"
+          "target": "6-basketball-court"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "6-1-school-center",
-      "name": "1 School Center",
+      "id": "6-basketball-court",
+      "name": "Basketball Court",
       "levels": [
         {
           "tileSize": 256,
@@ -297,14 +297,14 @@ var APP_DATA = {
           "yaw": 0.6435235388358649,
           "pitch": 0.041424866750480405,
           "rotation": 0,
-          "target": "5-2-students-entrance"
+          "target": "5-student-entrance"
         }
       ],
       "infoHotspots": []
     },
     {
       "id": "7-steam-classroom",
-      "name": "STEAM classroom",
+      "name": "STEAM Classroom",
       "levels": [
         {
           "tileSize": 256,
@@ -335,14 +335,14 @@ var APP_DATA = {
           "yaw": -2.171559734028744,
           "pitch": -0.0937390703991774,
           "rotation": 0,
-          "target": "1-6-second-floor"
+          "target": "1-second-floor"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "8-arts-classroo",
-      "name": "Arts Classroo",
+      "id": "8-arts-classroom",
+      "name": "Arts Classroom",
       "levels": [
         {
           "tileSize": 256,
@@ -373,7 +373,7 @@ var APP_DATA = {
           "yaw": 0.39274206659244904,
           "pitch": 0.024951376656940027,
           "rotation": 0,
-          "target": "1-6-second-floor"
+          "target": "1-second-floor"
         }
       ],
       "infoHotspots": []
@@ -383,7 +383,7 @@ var APP_DATA = {
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
-    "fullscreenButton": false,
-    "viewControlButtons": false
+    "fullscreenButton": true,
+    "viewControlButtons": true
   }
 };
