@@ -62,9 +62,9 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
+        "yaw": 0.951490231851146,
         "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "fov": 1.325599857056214
       },
       "linkHotspots": [
         {
@@ -78,6 +78,18 @@ var APP_DATA = {
           "pitch": 0.15597524626665304,
           "rotation": 3.141592653589793,
           "target": "3-4-first-floor"
+        },
+        {
+          "yaw": 0.9197169598406738,
+          "pitch": 0.24276646968733928,
+          "rotation": 5.497787143782138,
+          "target": "7-steam-classroom"
+        },
+        {
+          "yaw": 1.403663475903297,
+          "pitch": 0.10358090803112674,
+          "rotation": 0,
+          "target": "8-arts-classroo"
         }
       ],
       "infoHotspots": []
@@ -276,9 +288,9 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
+        "yaw": -1.4715166784794977,
         "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "fov": 1.325599857056214
       },
       "linkHotspots": [
         {
@@ -286,6 +298,82 @@ var APP_DATA = {
           "pitch": 0.041424866750480405,
           "rotation": 0,
           "target": "5-2-students-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-steam-classroom",
+      "name": "STEAM classroom",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.171559734028744,
+          "pitch": -0.0937390703991774,
+          "rotation": 0,
+          "target": "1-6-second-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "8-arts-classroo",
+      "name": "Arts Classroo",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.39274206659244904,
+          "pitch": 0.024951376656940027,
+          "rotation": 0,
+          "target": "1-6-second-floor"
         }
       ],
       "infoHotspots": []
