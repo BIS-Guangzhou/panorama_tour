@@ -77,7 +77,7 @@ var APP_DATA = {
           "yaw": 0.3833463292510899,
           "pitch": 0.15597524626665304,
           "rotation": 3.141592653589793,
-          "target": "3-admissions"
+          "target": "3-first-floor"
         },
         {
           "yaw": 0.9197169598406738,
@@ -128,13 +128,19 @@ var APP_DATA = {
           "pitch": 0.2913936290447854,
           "rotation": 0,
           "target": "1-second-floor"
+        },
+        {
+          "yaw": -2.1165899374767907,
+          "pitch": 0.258081156803021,
+          "rotation": 0,
+          "target": "3-first-floor"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-admissions",
-      "name": "Admissions",
+      "id": "3-first-floor",
+      "name": "First Floor",
       "levels": [
         {
           "tileSize": 256,
@@ -171,14 +177,14 @@ var APP_DATA = {
           "yaw": 0.1570117653754579,
           "pitch": -0.020867989082905325,
           "rotation": 0.7853981633974483,
-          "target": "4-3-marketing"
+          "target": "4-admissions"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-3-marketing",
-      "name": "3 Marketing",
+      "id": "4-admissions",
+      "name": "Admissions",
       "levels": [
         {
           "tileSize": 256,
@@ -209,7 +215,7 @@ var APP_DATA = {
           "yaw": -0.4483514133272397,
           "pitch": 0.02548894106895716,
           "rotation": 0,
-          "target": "3-admissions"
+          "target": "3-first-floor"
         },
         {
           "yaw": -2.591121853421358,
@@ -218,7 +224,14 @@ var APP_DATA = {
           "target": "5-student-entrance"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 1.6748164356097135,
+          "pitch": 0.27731439117395773,
+          "title": "Student Service",
+          "text": "At Student Services, we support your child’s academic, emotional, and social growth while guiding their path to higher education, ensuring they thrive and feel right at home in our diverse global community."
+        }
+      ]
     },
     {
       "id": "5-student-entrance",
@@ -253,7 +266,7 @@ var APP_DATA = {
           "yaw": 1.2196866557641677,
           "pitch": 0.013317950818576563,
           "rotation": 0,
-          "target": "4-3-marketing"
+          "target": "4-admissions"
         },
         {
           "yaw": -1.304557797940097,
