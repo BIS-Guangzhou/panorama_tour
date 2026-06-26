@@ -776,6 +776,73 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   transition: opacity 0.3s ease-in-out 0.4s;
 }
 
+/* Inline info hotspot (always visible in 3D) */
+
+body.inline-info-hotspots .info-hotspot-inline {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.inline-info-hotspots .info-hotspot-inline .info-hotspot-card {
+  position: relative;
+  width: 280px;
+  max-height: 220px;
+  padding: 10px 12px;
+  background-color: rgb(58, 68, 84);
+  background-color: rgba(58, 68, 84, 0.92);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  overflow-y: auto;
+  -webkit-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  line-height: 1.4;
+}
+
+body.inline-info-hotspots .info-hotspot-inline .info-hotspot-card:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(58, 68, 84, 0.92);
+}
+
+body.inline-info-hotspots .info-hotspot-inline .info-hotspot-title {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+body.inline-info-hotspots .info-hotspot-inline .info-hotspot-text {
+  position: static;
+  width: auto;
+  height: auto;
+  max-height: none;
+  top: auto;
+  left: auto;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  overflow: visible;
+  visibility: visible;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+body.inline-info-hotspots.mobile .info-hotspot-inline .info-hotspot-card {
+  width: 220px;
+  max-height: 160px;
+  font-size: 14px;
+}
+
 /* View control buttons */
 
 .viewControlButton {

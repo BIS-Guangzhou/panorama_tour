@@ -62,6 +62,10 @@
     document.body.classList.add('tooltip-fallback');
   }
 
+  if (data.settings.infoHotspotMode === 'inline') {
+    document.body.classList.add('inline-info-hotspots');
+  }
+
   // Viewer options.
   var viewerOpts = {
     controls: {
@@ -97,8 +101,11 @@
     });
 
     // Create info hotspots.
+    var createInfoHotspotFn = data.settings.infoHotspotMode === 'inline'
+      ? createInlineInfoHotspotElement
+      : createInfoHotspotElement;
     data.infoHotspots.forEach(function(hotspot) {
-      var element = createInfoHotspotElement(hotspot);
+      var element = createInfoHotspotFn(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
 
@@ -282,6 +289,32 @@
 
     wrapper.appendChild(icon);
     wrapper.appendChild(tooltip);
+
+    return wrapper;
+  }
+
+  function createInlineInfoHotspotElement(hotspot) {
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('info-hotspot');
+    wrapper.classList.add('info-hotspot-inline');
+
+    var card = document.createElement('div');
+    card.classList.add('info-hotspot-card');
+
+    var title = document.createElement('div');
+    title.classList.add('info-hotspot-title');
+    title.innerHTML = hotspot.title;
+
+    var text = document.createElement('div');
+    text.classList.add('info-hotspot-text');
+    text.innerHTML = hotspot.text;
+
+    card.appendChild(title);
+    card.appendChild(text);
+    wrapper.appendChild(card);
+
+    stopTouchAndScrollEventPropagation(wrapper);
 
     return wrapper;
   }
