@@ -29,6 +29,8 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+  var splashScreenElement = document.querySelector('#splashScreen');
+  var startTourButtonElement = document.querySelector('#startTourButton');
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -386,7 +388,12 @@
     return null;
   }
 
-  // Display the initial scene.
-  switchScene(scenes[0]);
+  function startTour() {
+    splashScreenElement.classList.add('hidden');
+    document.body.classList.remove('splash-active');
+    switchScene(scenes[0]);
+  }
+
+  startTourButtonElement.addEventListener('click', startTour);
 
 })();
